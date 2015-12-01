@@ -1,13 +1,30 @@
 # CSS Flexbox Layout
-## Aligning Flex Items on the Cross Axis
+## Vertical and Horizontal Centering
 ### Video review
 
-- The `align-items` property applies to **flex containers** only.
-- The `align-self` property applies to **flex items** only.
-- `align-items` aligns flex items vertically in the flex container.
-- To align all flex items to the start of the cross axis, use `align-items: flex-start;`.
-- `align-items: flex-end;` packs the items toward the end of the cross axis.
-- `align-items: center;` perfectly centers items along the cross axis.
-- `align-self: flex-start;` aligns a flex item to the start of the cross axis.
-- `align-self: flex-end;` aligns a flex item to the end of the cross axis.
-- `align-self: center;` aligns a flex item to the center of the cross axis.
+#### Three ways to center-align elements using flexbox
+
+Set the flex container's `justify-content` and `align-items` values to `center`:
+```css
+.container {
+  justify-content: center;
+  align-items: center;
+}
+```
+
+Set the flex container's `justify-content` value to `center`, while setting the flex item's `align-self` value to `center`:
+```css
+.container {
+  justify-content: center;
+}
+.item {
+  align-self: center;
+}
+```
+
+Set the flex item's `margin` value to `auto`:
+```css
+.item {
+  margin: auto;
+}
+```
