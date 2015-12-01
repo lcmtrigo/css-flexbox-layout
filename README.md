@@ -1,20 +1,11 @@
 # CSS Flexbox Layout
-## Distributing Space Inside a Flex Container
+## Changing the Order of Flex Items
 ### Video review
 
-- You apply the `justify-content` property to **flex containers** only.
-- The `justify-content` property lets you control the position and
-	alignment of flex Items on the main axis and how space should be distributed in a flex container.
-- The default value for `justify-content` is `flex-start`, which
-	places items towards the start of each flex line.
-- To place items at the end of the flex line, set `justify-content`
-	to `flex-end.`
-- The value center places flex items in the center of the line,
-	with equal amounts of empty space between the line's start edge and the first item.
-- The value `space-between` displays equal spacing between flex
-	items.
-- For equal spacing around every flex item, use the value `space-around.`
-- A margin set to auto will absorb any extra space around a flex
-	item and push other flex items into different positions.
-
-
+- The order property applies to **flex items** only.
+- We can use the `order` property to change the order of any flex item.
+- You can structure an HTML document for SEO or accessibility first, then rearrange the content without ever editing the HTML.
+- The default order of all flex items is `0`.
+- order places flex items relative to the other items' `order` values.
+- To place a flex item before another item, it needs to have a lower `order` value than the item.
+- To place a flex item after another item, it needs to have a higher `order` value than the item.
