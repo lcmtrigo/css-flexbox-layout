@@ -1,18 +1,20 @@
 # CSS Flexbox Layout
-## Wrapping Flex Items
+## Distributing Space Inside a Flex Container
 ### Video review
 
-- The `flex-wrap` property is for **flex containers** only.
-- The flex container lays out flex items on a single line called
-	a **flex line.**
-- The flex container tries to fit all items on one flex line,
-	even if causes its contents to overflow.
-- The flex container can break flex items into multiple flex lines
-	and allow them to wrap as needed.
--	With the `flex-wrap` property, you can control whether the flex
-	container is a single-line or multi-line layout.
-- The value `wrap` breaks the flex items into multiple lines.
-
-
+- You apply the `justify-content` property to **flex containers** only.
+- The `justify-content` property lets you control the position and
+	alignment of flex Items on the main axis and how space should be distributed in a flex container.
+- The default value for `justify-content` is `flex-start`, which
+	places items towards the start of each flex line.
+- To place items at the end of the flex line, set `justify-content`
+	to `flex-end.`
+- The value center places flex items in the center of the line,
+	with equal amounts of empty space between the line's start edge and the first item.
+- The value `space-between` displays equal spacing between flex
+	items.
+- For equal spacing around every flex item, use the value `space-around.`
+- A margin set to auto will absorb any extra space around a flex
+	item and push other flex items into different positions.
 
 
