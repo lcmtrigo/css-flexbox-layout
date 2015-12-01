@@ -1,11 +1,13 @@
 # CSS Flexbox Layout
-## Smarter Layouts with flex-basis and flex
+## Aligning Flex Items on the Cross Axis
 ### Video review
 
-- `flex` and `flex-basis` apply to **flex items** only.
-- `flex-basis` specifies the initial main size of a flex item.
-- You set the initial size you want the flex items to be, then flexbox evenly distributes the free space according that size.
-- `flex` is the shorthand for `flex-grow`, `flex-basis` and `flex-shrink`.
-- Using only one number value for `flex` sets the `flex-grow` value of an item.
-- The second and third values are optional in the `flex` shorthand.
-- Setting only one number value for `flex` automatically sets the `flex-basis` value to `0`.
+- The `align-items` property applies to **flex containers** only.
+- The `align-self` property applies to **flex items** only.
+- `align-items` aligns flex items vertically in the flex container.
+- To align all flex items to the start of the cross axis, use `align-items: flex-start;`.
+- `align-items: flex-end;` packs the items toward the end of the cross axis.
+- `align-items: center;` perfectly centers items along the cross axis.
+- `align-self: flex-start;` aligns a flex item to the start of the cross axis.
+- `align-self: flex-end;` aligns a flex item to the end of the cross axis.
+- `align-self: center;` aligns a flex item to the center of the cross axis.
