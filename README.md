@@ -1,6 +1,7 @@
 # CSS Flexbox Layout
-## Building a Navigation Bar with Flexbox
+## Creating a Three Column Layout with Flexbox
 
-### Video review
+###Video review
 
-You can assign an equal amount of space to columns with the `flex-grow` and `flex` properties.
+- You can use flexbox to make responsive column calculations less complex.
+- Use the `flex-basis` property to set the initial size you want the column items to be.
