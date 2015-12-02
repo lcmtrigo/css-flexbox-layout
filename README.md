@@ -1,30 +1,15 @@
 # CSS Flexbox Layout
-## Vertical and Horizontal Centering
+## Building a Navigation Bar with Flexbox
+
+### Resources
+- [Flexbox - latest browser support](http://caniuse.com/#search=flexbox)
+
 ### Video review
+- It's possible for an element to be both a flex item and a flex container.
 
-#### Three ways to center-align elements using flexbox
-
-Set the flex container's `justify-content` and `align-items` values to `center`:
+Giving `.main-header` a `justify-content: space-between;` declaration positions the site name on the left side of the header and the navigation menu on the right:
 ```css
-.container {
-  justify-content: center;
-  align-items: center;
-}
-```
-
-Set the flex container's `justify-content` value to `center`, while setting the flex item's `align-self` value to `center`:
-```css
-.container {
-  justify-content: center;
-}
-.item {
-  align-self: center;
-}
-```
-
-Set the flex item's `margin` value to `auto`:
-```css
-.item {
-  margin: auto;
+.main-header {
+  justify-content: space-between; 
 }
 ```
